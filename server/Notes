@@ -1,0 +1,15 @@
+nodemon -> npm install @babel/node -g
+
+bcrypt for hashing the passwords and salt for looping the hashing
+jwt is for sessions and identifying the correct user like whether i'm using my account not others.
+
+Statics nd methods
+
+Google Cloud
+console->API->credentials
+Authorized js origins-http://localhost:4000
+Authorized redirect URIs-redirect link
+
+signin signup -> google cloud
+
+joi for validation

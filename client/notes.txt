@@ -1,0 +1,3 @@
+route is for navigation
+
+app.js(passing the content page) -> HOC(reusable for same layout pages) -> Layout(structure of the page ->navbar,body,footer)
