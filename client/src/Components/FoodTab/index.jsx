@@ -3,6 +3,7 @@ import { RiShoppingBag3Line } from "react-icons/ri";
 import { IoFastFoodOutline, IoNutritionOutline } from "react-icons/io5";
 import { BiDrink } from "react-icons/bi";
 import { useParams,Link } from "react-router-dom";
+import classnames from 'classnames';
 
 const MobileTab = () =>{
   const [allTypes, setAllTypes] = useState([
@@ -120,16 +121,17 @@ const LargeTab = () =>{
 
   return(
      <>
-     <div className="hidden lg:flex container mx-auto gap-14 px-20">
+     <div className="hidden lg:flex container mx-auto gap-14 px-20 m-4">
         {allTypes.map((item) =>(
           <Link to={`/${item.id}`}>
-          <div className="flex items-center gap-3">
+          <div className={classnames("flex items-center gap-3 ",{"border-b-2 border-zomato-400":type===item.id})}>
            <div className={`w-12 h-12  bg-${item.id === type ? "blue" : "gray"}-100 rounded-full p-2 `}>
              <img src={ item.id===type?item.imageActive:item.imageDefault} 
              alt="delivery" className="w-full h-full"/>
            </div>
            <h4 className={type===item.id ?"text-xl text-zomato-400":"text-xl text-gray-400"}>{item.name}</h4>
            </div>
+           
            </Link>
         )
         )

@@ -71,7 +71,7 @@ const LgNav = () =>{
 function Navbar() {
   return (
     <>
-    <nav className='p-4 bg-white flex shadow-md w-full items-center'>
+    <nav className='p-4 bg-white flex shadow-md lg:shadow-none w-full items-center'>
           <SmNav/>
           <LgNav/>
     </nav>
